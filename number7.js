@@ -6,4 +6,6 @@ var c = 5 && "I am a";
 
 a = a + 1;
 b = b + 5;
-c = c + " String!";
+c = c + "String!";
+
+console.log(a,b,c);
