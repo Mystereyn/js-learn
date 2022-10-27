@@ -4,5 +4,5 @@
 
 // Change the 0.0 so that product will equal 5.0.
 
-let product = 5.0 * 0.0;
+let product = 5.0 * 1;
 console.log(product);
