@@ -1,2 +1,2 @@
-let quotlent = 4.4 / 2;
-console.log(quotlent);
+const quotient = 4.4 / 2;
+console.log(quotient);
