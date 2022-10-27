@@ -14,6 +14,12 @@
 // Convert the assignments for a, b, and c to use the += operator.
 
 
-let a  = 15;
-let b = 26;
-let c = 19;
+let a  = 3;
+let b = 17;
+let c = 12;
+
+a += 12;
+b += 9;
+c += 7;
+
+console.log(a,b,c);
