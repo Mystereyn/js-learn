@@ -20,6 +20,6 @@
 // const myStr = "I am a\"double quoted\" string inside\" double quotes";
 
 //**Ini yang benar */
-const myStr = "I am a \"double quoted\" string inside \"double quotes\"";
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 console.log(myStr);
 
