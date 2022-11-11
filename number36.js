@@ -8,3 +8,7 @@ const wordBlanks = `myNoun = ${myNoun} + myAdjective = ${myAdjective} + myVerb =
 // Only change code above this line
 
 console.log(wordBlanks);
+
+
+// url 
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/word-blanks
