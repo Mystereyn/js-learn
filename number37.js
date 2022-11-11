@@ -8,4 +8,10 @@
 
 // array string, number, float
 
-const myArray = ["Teuku" , 21];
+// const myArray = ["Teuku" , 21];
+
+// nested array 
+
+const myArray = [ ["Teuku" , 21] , ["Reynaldi",21] ]
+
+console.log(myArray);
