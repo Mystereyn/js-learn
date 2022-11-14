@@ -14,4 +14,4 @@
 
 const myArray = [ ["Teuku" , 21] , ["Reynaldi",21] ]
 
-console.table(myArray);
+console.log(myArray);
