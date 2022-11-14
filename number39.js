@@ -1,3 +1,10 @@
+// berbeda dengan array string, tiap barisan data bisa diubah, meskipun itu adalah const
+
+
+
+
+
+
 // Setup
 const myArray = [18, 64, 99];
 
