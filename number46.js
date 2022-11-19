@@ -11,3 +11,5 @@ function reusableFunction() {
     console.log("Hi World");
 };
 reusableFunction();
+
+// const a = "B"; 

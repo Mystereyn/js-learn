@@ -15,3 +15,16 @@ let c = 33;
 a /= 12;
 b /= 4;
 c /= 11;
+
+const object = {
+    Name: "Teuku Reynaldi",
+    Age : 21,
+    Address : "Jl.Raya Bogor"
+}
+
+// object must be transfering into a new variable, we called Sort for sorting.
+const sort = (object) => {
+    console.log(object);
+}
+sort(object.Name);
+sort(object.Age)
