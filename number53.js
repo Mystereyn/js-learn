@@ -43,4 +43,4 @@ let testArr = [1, 2, 3, 4, 5];
 // Display code
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr)); //* INI JUGA HASILNYA [2,3,4,5,6]; KENAPA NILAI 1 NYA HILANG?
+console.log("After: " + JSON.stringify(testArr)); //* INI JUGA HASILNYA [2,3,4,5,6]; KENAPA NILAI 1 NYA HILANG?gt
