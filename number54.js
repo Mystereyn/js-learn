@@ -16,10 +16,18 @@
 // };
 
 
-function trueOrFalse() {
-    if(trueOrFalse) {
-        return "Yes that was true";
+// function trueOrFalse(trueOrFalse) {
+
+//     if(trueOrFalse == true || trueOrFalse == false) {
+//         return "Yes that was true";
+//     }
+//     return "No that was false";
+// };
+
+function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+      return "Yes, that was true";
     }
-    return "No that was false";
-};
-console.log(trueOrFalse());
+    return "No, that was false";
+}
+console.log(trueOrFalse(true));
