@@ -30,4 +30,4 @@ function trueOrFalse(wasThatTrue) {
     }
     return "No, that was false";
 }
-console.log(trueOrFalse(true));
+console.log(trueOrFalse(false));
