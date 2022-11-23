@@ -6,4 +6,5 @@ function testEqual(val) {
 }
 // https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-equality-operator
 
+
 console.log(testEqual("12"));
