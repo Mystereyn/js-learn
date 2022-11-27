@@ -28,3 +28,13 @@ function testStrict(val) {
 
 console.log(testStrict(7));
 
+
+// Method typeOf
+
+function compareEquality(a,b) {
+    if(typeof(a === b)) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+console.log(compareEquality("10" , 10));
