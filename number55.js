@@ -38,3 +38,17 @@ function compareEquality(a,b) {
     return "Equal";
 }
 console.log(compareEquality("10" , 10));
+
+
+/** 
+ *  != digunakan buat perbandingan tidak cocoknya 2 nilai 
+ * 
+ * */
+function testNotEqual(val) {
+    if(val != 99) {
+        return "Not Equal";
+    }
+    return "Equal";
+};
+
+console.log(testNotEqual("99"));
