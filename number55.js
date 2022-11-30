@@ -3,12 +3,12 @@
 // digunakan buat perbandingan valuenya saja
 
 
-// function testEqual(val) {
-//     if(val == 10 ) {
-//         return "Not Equal";
-//     }
-//     return "Equal";
-// }
+function testEqual(val) {
+    if(val == 10 ) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
 // https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-equality-operator
 
 
@@ -19,39 +19,39 @@
 //perbandingan untuk tipe data, variable dan valuenya
 
 
-// function testStrict(val) {
-//     if(val === 7) {
-//         return "Equal";
-//     }
-//     return "Not Equal";
-// }
+function testStrict(val) {
+    if(val === 7) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
 
-// console.log(testStrict(7));
+console.log(testStrict(7));
 
 
 // Method typeOf
 
-// function compareEquality(a,b) {
-//     if(typeof(a === b)) {
-//         return "Not Equal";
-//     }
-//     return "Equal";
-// }
-// console.log(compareEquality("10" , 10));
+function compareEquality(a,b) {
+    if(typeof(a === b)) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+console.log(compareEquality("10" , 10));
 
 
 /** 
  *  != digunakan buat perbandingan tidak cocoknya 2 nilai 
  * 
  * */
-// function testNotEqual(val) {
-//     if(val != 99) {
-//         return "Not Equal";
-//     }
-//     return "Equal";
-// };
+function testNotEqual(val) {
+    if(val != 99) {
+        return "Not Equal";
+    }
+    return "Equal";
+};
 
-// console.log(testNotEqual("99"));
+console.log(testNotEqual("99"));
 
 // !== digunakan jika ingin perbandingan tipe data value dari variable
 
@@ -65,3 +65,32 @@ console.log(testStrictNotEqual(17));
 console.log(testStrictNotEqual("17"));
 console.log(testStrictNotEqual(12));
 console.log(testStrictNotEqual("Bob"));
+
+function testGreaterThan(val) {
+    if(val > 100) {
+        return "Over 100";
+    };
+    if(val > 10) {
+        return "Over 10";
+    };
+    return "10 or Under"; 
+};
+console.log(testGreaterThan(0));
+console.log(testGreaterThan(10));
+console.log(testGreaterThan(101));
+
+function testGreaterOrEqual(val) {
+    // categories 100
+    if(val >= 20) {
+        return "20 or Over";
+    }
+    // categories 10
+    if(val >= 10) {
+        return "10 or Over"
+    }
+    return "Less than 10";
+};
+console.log(testGreaterOrEqual(100));
+console.log(testGreaterOrEqual(10));
+console.log(testGreaterOrEqual(9));
+console.log(testGreaterOrEqual(21));
