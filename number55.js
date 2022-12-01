@@ -94,3 +94,44 @@ console.log(testGreaterOrEqual(100));
 console.log(testGreaterOrEqual(10));
 console.log(testGreaterOrEqual(9));
 console.log(testGreaterOrEqual(21));
+
+
+// Less Than
+function testLessThan(val) {
+    if(val < 25) {
+        return "Under 25";
+    }
+    if(val< 55) {
+        return "Under 55";
+    } else {
+        return "55 or Over";
+    }; 
+};
+console.log(testLessThan(0));
+console.log(testLessThan(54))
+console.log(testLessThan(99));
+console.log(testLessThan(55));
+
+function testLessOrEqual(val) {
+    if(val <= 12) {
+        return "Smaller Than or Equal to 12";
+    }
+    if(val <= 24) {
+        return "Smaller Than or Equal to 24";
+    }
+    return "More Than 24";
+};
+
+// Smaller than or Equal to 12
+console.log(testLessOrEqual(0))
+console.log(testLessOrEqual(11))
+console.log(testLessOrEqual(12))
+
+
+console.log(testLessOrEqual(23));
+console.log(testLessOrEqual(24));
+
+// More than 24
+// More than 24
+console.log(testLessOrEqual(25));
+console.log(testLessOrEqual(55));
