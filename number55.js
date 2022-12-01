@@ -26,7 +26,7 @@ function testStrict(val) {
     return "Not Equal";
 }
 
-console.log(testStrict(7));
+console.log(testStrict("7"));
 
 
 // Method typeOf
@@ -40,10 +40,10 @@ function compareEquality(a,b) {
 console.log(compareEquality("10" , 10));
 
 
-/** 
- *  != digunakan buat perbandingan tidak cocoknya 2 nilai 
- * 
- * */
+// /** 
+//  *  != digunakan buat perbandingan tidak cocoknya 2 nilai 
+//  * 
+//  * */
 function testNotEqual(val) {
     if(val != 99) {
         return "Not Equal";
