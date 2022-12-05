@@ -50,5 +50,3 @@ console.log('\n');
 console.log(testLogicalOr(20)); //inside
 console.log(testLogicalOr(21)); //
 console.log(testLogicalOr(25));
-
-
