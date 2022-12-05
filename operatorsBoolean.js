@@ -29,15 +29,26 @@ console.log(testLogicalAnd(80));
 
 
 // OR OPERATOR
-function testLogicalOR(val) {
-    if(val >= 20 || val >= 25) {
-        return "Inside";
+function testLogicalOr(val) {
+    
+    if(val < 10 || val > 20 ) {
+        return "Outside";
     }
-    return "Outside";
+    return "Inside";
 };
 
-console.log(testLogicalOR(0));
-console.log(testLogicalOR(9));
+// <=
+console.log(testLogicalOr(0));
+console.log(testLogicalOr(9));
+console.log(testLogicalOr(10));
+console.log(testLogicalOr(15));
+console.log(testLogicalOr(19));
 
+
+console.log('\n');
+// >=
+console.log(testLogicalOr(20)); //inside
+console.log(testLogicalOr(21)); //
+console.log(testLogicalOr(25));
 
 
