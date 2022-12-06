@@ -19,6 +19,10 @@ function testLogicalAnd (val) {
     return "No";
 };
 
+console.log('\n');
+
+console.log("this is logical and");
+
 console.log(testLogicalAnd(0));
 console.log(testLogicalAnd(25));
 console.log(testLogicalAnd(30));
@@ -27,6 +31,8 @@ console.log(testLogicalAnd(51));
 console.log(testLogicalAnd(75));
 console.log(testLogicalAnd(80));
 
+console.log('\n');
+console.log("this is logical or");
 
 // OR OPERATOR
 function testLogicalOr(val) {
@@ -44,9 +50,7 @@ console.log(testLogicalOr(10));
 console.log(testLogicalOr(15));
 console.log(testLogicalOr(19));
 
-
-console.log('\n');
 // >=
 console.log(testLogicalOr(20)); //inside
 console.log(testLogicalOr(21)); //
-console.log(testLogicalOr(25));
+console.log(testLogicalOr(25)); 
