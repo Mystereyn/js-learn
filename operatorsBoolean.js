@@ -53,4 +53,4 @@ console.log(testLogicalOr(19));
 // >=
 console.log(testLogicalOr(20)); //inside
 console.log(testLogicalOr(21)); //
-console.log(testLogicalOr(25)); 
+console.log(testLogicalOr(25));
