@@ -54,3 +54,32 @@ console.log(caseInSwitch(2));
 console.log(caseInSwitch(3));
 console.log(caseInSwitch(4));
 
+function switchOfStuff(val) {
+    let answer = " ";
+
+    switch(val){
+        case "a":
+            return answer = "apple";
+            break;
+        case "b" : 
+            return answer = "bird";
+            break;
+        case "c" :
+            return answer = "cat";
+            break;
+        default : 
+            return answer = "stuff";
+    }
+    return answer;
+};
+
+console.log(switchOfStuff("a"));
+console.log(switchOfStuff("b"));
+console.log(switchOfStuff("c"));
+console.log(switchOfStuff("d"));
+
+function sequantialSizes(val) {
+    let answer = "";
+    
+}
+
