@@ -54,6 +54,8 @@ console.log(caseInSwitch(2));
 console.log(caseInSwitch(3));
 console.log(caseInSwitch(4));
 
+
+// Memakai default logic
 function switchOfStuff(val) {
     let answer = " ";
 
@@ -66,7 +68,7 @@ function switchOfStuff(val) {
             break;
         case "c" :
             return answer = "cat";
-            break;
+            break;                   
         default : 
             return answer = "stuff";
     }
@@ -78,8 +80,39 @@ console.log(switchOfStuff("b"));
 console.log(switchOfStuff("c"));
 console.log(switchOfStuff("d"));
 
+
+
+// multiple Identical
 function sequantialSizes(val) {
+
     let answer = "";
     
-}
+    switch(val) {
+        case 1 : return "Low";
+        case 2 : return "Low";
+        case 3 : return "Low";
+
+        case 4 : return "Mid";
+        case 5 : return "Mid";
+
+        case 6 : return "Mid";
+        case 7 : return "High";
+        case 8 : return "High";
+        case 9 : return "High";
+
+    };
+};
+
+console.log(sequantialSizes(1));
+console.log(sequantialSizes(2));
+console.log(sequantialSizes(3));
+
+console.log(sequantialSizes(4));
+console.log(sequantialSizes(5));
+console.log(sequantialSizes(6));
+
+console.log(sequantialSizes(7));
+console.log(sequantialSizes(8));
+console.log(sequantialSizes(9));
+
 
