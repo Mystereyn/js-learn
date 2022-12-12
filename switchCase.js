@@ -83,37 +83,102 @@ console.log(switchOfStuff("d"));
 
 
 // multiple Identical
-function sequantialSizes(val) {
+// function sequantialSizes(val) {
 
-    let answer = "";
+//     let answer = "";
     
+//     switch(val) {
+//         case 1 : answer = "Low";
+//         case 2 : answer = "Low";
+//         case 3 : answer = "Low";
+//                  break;
+
+//         case 4 : answer = "Mid";
+//         case 5 : answer = "Mid";
+//         case 6 : answer = "Mid";
+//                  break;
+
+//         case 7 : answer = "High";
+//         case 8 : answer = "High";
+//         case 9 : answer = "High";
+//                  break;
+//     };
+//     return answer;
+// };
+
+
+
+function sequentialSizes(val) {
+    
+    let answer = " ";
     switch(val) {
-        case 1 : answer = "Low";
-        case 2 : answer = "Low";
-        case 3 : answer = "Low";
-                 break;
+        case 1 :
+        case 2 :
+        case 3 :
+        answer = "Low";
+        break;
 
-        case 4 : answer = "Mid";
-        case 5 : answer = "Mid";
-        case 6 : answer = "Mid";
-                 break;
-
-        case 7 : answer = "High";
-        case 8 : answer = "High";
-        case 9 : answer = "High";
-                 break;
-    };
+        case 4 :
+        case 5 : 
+        case 6 :
+        answer = "Mid";
+        break;
+        
+        case 7 :
+        case 8 :
+        case 9 :
+            answer = "High";
+    }
     return answer;
 };
 
-console.log(sequantialSizes(1));
-console.log(sequantialSizes(2));
-console.log(sequantialSizes(3));
+console.log(sequentialSizes(1));
+console.log(sequentialSizes(2));
+console.log(sequentialSizes(3));
 
-console.log(sequantialSizes(4));
-console.log(sequantialSizes(5));
-console.log(sequantialSizes(6));
+console.log(sequentialSizes(4));
+console.log(sequentialSizes(5));
+console.log(sequentialSizes(6));
 
-console.log(sequantialSizes(7));
-console.log(sequantialSizes(8));
-console.log(sequantialSizes(9));
+console.log(sequentialSizes(7));
+console.log(sequentialSizes(8));
+console.log(sequentialSizes(9));
+
+// If Else but using switchCase
+
+function chainToSwitch(val) {
+    let answer = "";
+
+    switch(val) {
+        case "bob" : 
+            answer = "Marley";
+            break;
+        case 42 :
+            answer = "The Answer";
+            break;
+
+        case 1 : 
+            answer = "There is no #1";
+            break;
+
+        case 99 : 
+            answer = "Missed me by this much!";
+            break;
+
+        case 7 : 
+            answer = "Ate Nine";
+            break;
+
+        // default : 
+        //     answer = "";
+    }
+    return answer;
+};
+
+console.log(chainToSwitch(1));
+console.log(chainToSwitch("bob"));
+console.log(chainToSwitch(99));
+console.log(chainToSwitch(156));
+console.log(chainToSwitch("John"));
+
+
