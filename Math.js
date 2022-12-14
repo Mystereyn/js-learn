@@ -26,7 +26,7 @@ function abTest(a,b) {
     // else if (a && b == 0){
     //     return 0;
     // }
-    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2)); //gatau baris code ini gunanya apa?
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2)); //gatau baris code ini gunanya apa
 };
 
 console.log(abTest(2,2));

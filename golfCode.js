@@ -58,6 +58,3 @@ console.log(golfScore(4,4));
 console.log(golfScore(4,5));
 console.log(golfScore(4,6));
 console.log(golfScore(4,7));
-
-
-
