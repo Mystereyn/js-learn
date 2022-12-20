@@ -66,3 +66,75 @@ console.log(myDog);
 delete myDog.tails; //delete = menghapus properties
 console.log(myDog);
 
+
+
+
+
+
+
+
+
+// Using Objects for Lookups
+
+Setup
+function phoneticLookup(val) {
+    let result = "";
+  
+    switch(val) {
+        case "alpha":
+         result = "Adams";
+      break;
+    case "bravo":
+      result = "Boston";
+      break;
+    case "charlie":
+      result = "Chicago";
+      break;
+    case "delta":
+      result = "Denver";
+      break;
+    case "echo":
+      result = "Easy";
+      break;
+    case "foxtrot":
+      result = "Frank";
+    }    
+   // Only change code above this line
+    return result;
+};
+phoneticLookup("charlie");
+
+//   change to single variable object, bernama lookUp
+
+// function phoneticLookup(lookUp) {
+//   // menyimpan value properties di variable yang baru
+//    lookUp = {
+//     "alpha" : "adams",
+//     "Bravo" : "Boston",
+//     "delta" : "Denver",
+//     "echo" : "Easy",
+//     "foxtrot" : "Frank"
+//   };
+// };
+
+// console.log(phoneticLookup("alpha));
+
+
+
+function phoneticLookup(value) {
+    var result = " ";
+    const lookUp = {
+    "alpha" : "Adams",
+    "bravo" : "Boston",
+    "delta" : "Denver",
+    "echo" : "Easy",
+    "foxtrot" : "Frank",
+    "charlie" : "Chicago"
+};
+    return lookUp[value];
+    return result;
+}
+console.log(phoneticLookup("alpha"));
+console.log(phoneticLookup("bravo"));
+console.log(phoneticLookup("charlie"));
+
