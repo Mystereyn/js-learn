@@ -76,7 +76,7 @@ console.log(myDog);
 
 // Using Objects for Lookups
 
-Setup
+// Setup
 function phoneticLookup(val) {
     let result = "";
   
@@ -138,3 +138,23 @@ console.log(phoneticLookup("alpha"));
 console.log(phoneticLookup("bravo"));
 console.log(phoneticLookup("charlie"));
 
+//Testing Objects for Properties
+
+// check if objc is exist or not, but using a function
+function checkObj(obj, checkProp) {
+    // obj = {
+    //     "gift" : "pony",
+    //     "pet" : "kitten",
+    //     "bed" : "sleigh"
+    // }
+    // // return checkProp = "Not Found"
+
+    if(obj.hasOwnProperty(checkProp)) { //hasOwnProperty = 
+      // return obj[checkProp];
+        return obj[checkProp];
+    } else {
+        return "Not Found";
+    }
+};
+
+// console.log(checkObj.obj,checkProp("gift"));
