@@ -1,4 +1,4 @@
-function masakNasi(stockBeras) {
+module.exports = function masakNasi(stockBeras) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if( stockBeras > 0) {
@@ -23,3 +23,6 @@ masakNasi(stockBeras).then(() => {
     console.log("Kita gak makan nasi")
     console.log(err);
 })
+
+
+
