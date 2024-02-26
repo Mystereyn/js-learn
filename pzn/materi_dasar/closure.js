@@ -1,14 +1,12 @@
 // closure = kombinasi function dan bundel refrensei ke data sekitarnya
 // contoh bundel refrensinya itu variable const ownerShip;
 
-function createAdder(value){ // function yang menampung nested func, 
-                             //value disini untuk mencetak nilai integer
+function createAdder(value){ 
 
     const ownerShip = "Teuku"; // global scope
     
-    // function  
     function add(param){
-        console.log(ownerShip) //global scope yang menjadi local scope
+        console.log(ownerShip);
         return value+param;
     };
     return add; // alasan untuk return function ini adalah tergantung
@@ -17,6 +15,9 @@ function createAdder(value){ // function yang menampung nested func,
 
 }
 
-const addTwo = createAdder(2);
+const addTwo = new createAdder(2);
 console.log(addTwo(10));
 console.log(addTwo(20));
+
+const addTen = new createAdder(10);
+console.log('This is the result of variable addTen');
