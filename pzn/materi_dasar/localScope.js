@@ -38,5 +38,9 @@ function fn(){
     console.log(nextVariableNested);
 }
 
+<<<<<<< HEAD
 fn()
 
+=======
+fn()
+>>>>>>> 93ba12eca5f7f1b496541bc20f892fa6ea0a5359
