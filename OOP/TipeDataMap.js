@@ -24,7 +24,7 @@ function useForEach() {
     // for(const values in multipleNames) {
     //     console.log(values)
     // }
-    let tampung;
+    // let tampung;
     
     multipleNames.forEach(tampung => {
         console.log(tampung)

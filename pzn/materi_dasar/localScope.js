@@ -37,3 +37,4 @@ function fn(){
     // cannot access, because the variable log outside of nestedfn(); 
     console.log(nextVariableNested);
 }
+fn()

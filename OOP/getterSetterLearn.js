@@ -10,19 +10,20 @@ class Person {
      * @param {string} value
      */
     set fullName(value){
-        const result = value.split("");
+        // const result = value.split("");
+        const result = value.split(", ");
         this.name = result[0];
-        this.lastName = result[1];
+        // this.lastName = result.slice(1).join(", ");
+        this.lastName = result.pop();
     }
 }
 
 const my = new Person("Teuku", "Reynaldi");
 
 function getInfo(){
-    console.info(my);
-    console.info(my.fullName);
+    console.info(my); // log above variable
 
-    my.fullName = "PPPPP";
+    my.fullName = "Teuku, Reynaldi, Putra, Irwansyah"
     console.info(my)
 }
 
