@@ -15,7 +15,7 @@
 //     case "Day 3":
 //         if(day==="Wednesday"){
 //             console.log(`That's true, ${day} is the third day`);
-//         }
+//         }+
 //     break;
 // }
 let day = "Wednesday";
