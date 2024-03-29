@@ -28,7 +28,28 @@ for(const datas of profile){
 // so that we conclude is normally function that the only which could be as the generator function
 
 // use yield if the function is generator
-// this is lazy
+// this is lazy function
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ *  penjelasan lazy function 
+
+    Lazy function adalah sebuah function yang tidak akan mengesekusi
+    evaluasi ekspresi ditunda sampai value tersebut benar diperlukan
+    singkatnya nilai komputasi tidak akan dievaluasi saat program dieksekusi
+    sampai titik dimana mereka didefinisikan terlebih dahulu.
+    lazy function biasanya digunakan untuk big data collection
+ * 
+ * 
+ *  Dengan lazy computation, kita dapat membuat struktur data atau fungsi yang menunda evaluasi nilai hingga saat diperlukan, 
+ *  yang dapat membantu meningkatkan kinerja dan efisiensi program, 
+ *  terutama dalam kasus-kasus di mana tidak semua data atau hasil komputasi benar-benar dibutuhkan.
+ * 
+ */
 function* generateEvenNumber(value){
     for(let i = 0; i <= value; i++){
         if(i%2 === 1){
@@ -37,6 +58,7 @@ function* generateEvenNumber(value){
         }
     }
 }
+console.log("\n");
 
 const evenNumber = generateEvenNumber(100);
 for(const iterationNumber of evenNumber){
