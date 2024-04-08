@@ -15,7 +15,3 @@ function callFunction(){
 let call = callFunction();
 
 console.log(call("Teuku"))
-
-dawdawdwad
-dawdwa
-dawdwa
