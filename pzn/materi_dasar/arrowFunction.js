@@ -24,3 +24,10 @@ const parameterArrowFunction = (args) => {
 }
 
 parameterArrowFunction();
+
+let arorwFunctionArguments = ()=> {
+    let numbers = [1,2,3,4,5,6,7,8];
+    let datas = numbers.filter(count => count % 2 == 0)
+    console.log(datas)
+}
+arorwFunctionArguments()
