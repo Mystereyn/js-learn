@@ -9,7 +9,3 @@ const personalInfo = {
 }
 console.log(personalInfo.txtGreetings(`Hello ${personalInfo.name}`));
 
-function thisKeyword(){
-    this.nama = nama;
-    this.alamat = alamat;   
-}
