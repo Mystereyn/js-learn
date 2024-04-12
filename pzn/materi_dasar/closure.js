@@ -34,3 +34,17 @@ const addTwo = new createAdder(2);
 console.log(addTwo(10));
 console.log(addTwo(20));
 console.log('This is the result of variable addTen');
+
+
+
+// This is not a closure
+let x = 5;
+let y = 8;
+
+{
+    let x = 10;
+    let y = 20;
+    let result = x + y;
+
+    console.log(result)
+}

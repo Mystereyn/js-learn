@@ -31,3 +31,5 @@ let arorwFunctionArguments = ()=> {
     console.log(datas)
 }
 arorwFunctionArguments()
+
+const exampleOneLineArrow = txt => console.log(`Hello ${txt}`); exampleOneLineArrow("World");
