@@ -62,3 +62,12 @@ function DataPersonal(){
     return DestructorDisplayParameter(PersonalInfo);
 }
 console.log(DataPersonal());
+
+//destructuring dengan memakai array di function parameter
+
+function DestructingArrayDisplayParameter([num1, num2]){
+  return  num1 + num2;
+}
+(()=>{
+  console.log(DestructingArrayDisplayParameter([10,10]));
+})()
