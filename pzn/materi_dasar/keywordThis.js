@@ -27,3 +27,4 @@ const anotherPerson = {
 }
 
 console.log(anotherPerson.txtGreetings(`Hello ${this.name2}`))
+
