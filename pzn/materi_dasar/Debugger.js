@@ -1,4 +1,3 @@
-
 function createFullName(firstName, middleName, lastName){
     debugger;
     const fullName = `${firstName} ${lastName} ${lastName}`;
@@ -6,3 +5,4 @@ function createFullName(firstName, middleName, lastName){
 }
 
 console.log(createFullName("Teuku", "Reynaldi", "Putra"));
+
