@@ -10,7 +10,7 @@
 
 
 // constructor function, memakai UpperCase untuk nama function karena best practisenya memakai ini
-void function Person(){  }
+function Person(){  }  
 
 const {
     
@@ -19,7 +19,8 @@ const {
     lastName = "Putra"
 
 } = new Person();
-
 const Arr = [firstName, middleName, lastName];
+
 console.log(Arr);
+
 
