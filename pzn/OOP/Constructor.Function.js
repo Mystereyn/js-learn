@@ -10,9 +10,7 @@
 
 
 // constructor function, memakai UpperCase untuk nama function karena best practisenya memakai ini
-function Person(){
-
-}  
+function Person(){}  
 
 const {
     
@@ -36,4 +34,4 @@ function ParameterConstructor(first,last){
 }
 
 let me = new ParameterConstructor("Teuku Reynaldi", "Putra");
-console.log(me.txtGreetings())
+console.log(me.txtGreetings());
