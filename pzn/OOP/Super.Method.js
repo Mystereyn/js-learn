@@ -15,3 +15,31 @@ class Rectangle extends Shape {
 const obj = new Rectangle();
 obj.paint()
 
+
+class Animal {
+    constructor(mammals, fish, birds, reptiles, amphibian) {
+        this.mammals = mammals;
+        this.fish = fish
+        this.birds = birds;
+        this.reptiles = reptiles;
+        this.amphibian = amphibian;
+    }
+    listedTheAnimal(){
+        this.mammals = ["Dog", "Cow", "Cat", "Giraffe"];
+    }
+}
+
+class DeletingPropertyAnimal extends Animal {
+    deleteProperty(){
+        super.listedTheAnimal();
+        // delete this.mammals;
+        // console.log("The Properties has been Eliminated")
+
+        this.mammals.pop();
+        console.log(this.mammals);
+
+    }
+}
+
+const print = new DeletingPropertyAnimal();
+print.deleteProperty()
