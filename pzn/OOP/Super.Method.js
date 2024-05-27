@@ -43,3 +43,4 @@ class DeletingPropertyAnimal extends Animal {
 
 const print = new DeletingPropertyAnimal();
 print.deleteProperty()
+
