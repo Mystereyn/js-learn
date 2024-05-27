@@ -1,3 +1,4 @@
+"use strict"
 class Animal {
     constructor(bark, barks){
         this.bark = bark;
@@ -28,4 +29,3 @@ animal1.identifyAnimal();
 let animal2 = new classifiedAnimal("cowsAndBull");
 // console.log(animal2.identifyAnimal());
 animal2.identifyAnimal();
-
