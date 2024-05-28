@@ -14,9 +14,3 @@ class Person {
 }
 let name = new Person("Masita",  "Umasugi");
 console.log(name.getnamePerson);
-
-class Circumference {
-    constructor(axisY, axisX){
-        this.axisY = 
-    }
-}
