@@ -35,12 +35,16 @@ class DeletingPropertyAnimal extends Animal {
         // delete this.mammals;
         // console.log("The Properties has been Eliminated")
 
-        this.mammals.pop();
-        console.log(this.mammals);
+        if(this.mammals){
+            this.mammals.pop()
+            console.log(this.mammals);
+        } else {
+            console.log("Last indexis array failed to removed!");
+        }
 
     }
+ 
 }
 
 const print = new DeletingPropertyAnimal();
 print.deleteProperty()
-
