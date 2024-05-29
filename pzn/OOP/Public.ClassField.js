@@ -12,6 +12,7 @@ class Pelanggan {
     namaBelakang = "";
     saldo = 50000;
 
+    // public field bisa ditambahkan ke constructor param.
     constructor(namaDepan, namaBelakang){
         this.namaDepan = namaDepan;
         this.namaBelakang = namaBelakang;
@@ -33,4 +34,24 @@ me.potongSisaSaldo();
 
 // bagaimana jika kita menambahkan child class?
 
-class 
+class Temperatur {
+    fahrenheit;
+    celcius;
+    kelvin;
+
+    constructor(fahrenheit, celcius, kelvin){
+        this.fahrenheit = fahrenheit;
+        this.celcius = celcius;
+        this.kelvin = kelvin
+    }
+}
+
+class CountTemperatur extends Temperatur{
+    countTemperatur(){
+        super.Temperatur;
+
+        switch(temperatur){
+            
+        }
+    }
+}

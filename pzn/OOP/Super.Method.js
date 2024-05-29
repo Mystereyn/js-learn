@@ -21,7 +21,7 @@ class Animal {
         this.mammals = mammals;
         this.fish = fish
         this.birds = birds;
-        this.reptiles = reptiles;
+        this.reptiles = reptiles;3
         this.amphibian = amphibian;
     }
     listedTheAnimal(){
