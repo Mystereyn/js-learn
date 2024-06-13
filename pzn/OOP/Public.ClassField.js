@@ -21,7 +21,7 @@ class Pelanggan {
     potongSisaSaldo(){
         let saldoAdmin = 5000;
         console.log(`Saldo anda : ${this.saldo}`)
-        console.log(`Saldo admin : ${saldoAdmin}`);
+        console.log(`Saldo admin : ${saldoAdmin}`)
         if(this.saldo){
             let sisa = this.saldo - saldoAdmin;
             console.log(`Halo yth. ${this.namaDepan} ${this.namaBelakang}, saldo anda telah terpotong menjadi : ${sisa}`)

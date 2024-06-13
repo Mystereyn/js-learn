@@ -22,5 +22,3 @@ console.log(count.increment())
 // count.#counter = 100
 
 console.log(`Check private field is available and the total recursives are : ${count.increment()}`)
-
-class 

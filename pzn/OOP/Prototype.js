@@ -76,3 +76,4 @@ CreatePrototypeConstructor.prototype.sayWords = function(){
 }
 const me = new CreatePrototypeConstructor("Teuku", "Reynaldi", "Putra")
 console.log(me);
+
