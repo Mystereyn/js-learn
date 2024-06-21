@@ -89,11 +89,14 @@ class Database {
         try {
             const dataJSON = JSON.stringify(datas);
             if(dataJSON !== null){
-                console.log(`Data JSON success to render : ${dataJSON}`);
+                console.log(dataJSON)
             }
 
         } catch (err){ 
             throw new Error('Data failed to rendered!, please rechecked the code above');
+        }
+        finally {
+            console.log("Data has been rendered!");
         }
     }
 }
