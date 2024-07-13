@@ -1,38 +1,91 @@
-    let arrays = ["Teuku", "Reynaldi", "Putra"];
+let arrays = ["Teuku", "Reynaldi", "Putra"];
 
-    class ArrayLibrary {
-        arraysForLoop() {
-            // shorthand foreach
-            arrays.forEach((data, index) => console.log(`index ${index}: ${data}`));
-        }
+class ArrayLibrary {
+    arraysForLoop() {
+        // shorthand foreach
+        arrays.forEach((data, index) => console.log(`index ${index}: ${data}`));
+    }
 
-        arraysQueueShift() {
-            while (arrays.length > 0) {
-                arrays.shift();
-                if (arrays.length > 0) {
-                    console.log(arrays);
-                }
-                return arrays;
+    arraysQueueShift() {
+        while (arrays.length > 0) {
+            arrays.shift()
+            if (arrays.length > 0) {
+                console.log(arrays);
             }
-        }
-
-        arraysQueuePush() {
-            let insertNewElemen = [];
-
-            if(insertNewElemen !== null){
-                insertNewElemen = [...arrays];
-                insertNewElemen.push("ini elemen baru");
-                console.log(insertNewElemen);
-            }
-            return insertNewElemen;
+            return arrays;
         }
     }
 
-    let arraysInstanceForLoop = new ArrayLibrary();
-    arraysInstanceForLoop.arraysForLoop();
+    arraysQueuePush() {
+        let insertNewElemen = [];
 
-    let arraysQueueInstance = new ArrayLibrary();
-    arraysQueueInstance.arraysQueueShift();
+        if (insertNewElemen !== null) {
+            insertNewElemen = [...arrays];
+            insertNewElemen.push("ini elemen baru");
+            console.log(insertNewElemen);
+        }
+        return insertNewElemen;
+    }
+    arraysQueueSearch() {
+        console.log(arrays.find(value => value == 3));
+        return arrays;
+    }
+    arraysFilter(insertNewElement) {
+        // let hasPushed = insertNewElement ? insertNewElement = [...arrays] 
+        ///                 ?  insertNewElement.push("ini elemen baru untuk coba arrays filter method") ?
+        //                 insertNewElement.filter(value => value === insertNewElement[2] ? console): console.log("element failed to pushed")
+        // return hasPushed;
 
-    let arraysQueuePushInstance = new ArrayLibrary();
-    arraysQueuePushInstance.arraysQueuePush();
+        // let hasPushed;
+        // if(insertNewElement){
+        //     insertNewElement = [...arrays];
+        //     insertNewElement.push("ini elemen baru untuk coba arrays filter method");
+        // }
+        // hasPushed = insertNewElement.filter((value)=>{
+        //     return value ? value === insertNewElement[2] : console.log(value, true);
+        // })
+        // if (insertNewElement) {
+        //     insertNewElement = [...arrays];
+        //     insertNewElement.push("ini elemen baru untuk coba arrays filter method");
+
+            // hasPushed = 
+            // hasPushed = insertNewElement.filter((value, index) => {
+            //     return value === insertNewElement[2] ? console.log(value) : null;
+            // });
+            // let hasPushed = insertNewElement
+
+            // let hasBeenPushed = insertNewElement.filter((value, filtered)=>{
+            //     return value ? filtered === insertNewElement[2] : console.log("Data yang dicari telah ditemukan");
+            // })
+            // return hasBeenPushed;
+
+            return insertNewElement ? (()=>{
+                insertNewElement = [...arrays];
+                insertNewElement.push("ini elemen baru untuk coba arrays filter method");
+
+                let hasBeenPushed = insertNewElement.filter((value, filtered)=> {
+                    value === insertNewElement[2] ? (console.log("Data yang dicari telah ditemukan!"), true) : false
+                });
+                return hasBeenPushed;
+            })() : [];
+            // let hasBeenPushed = insertNewElement.filter((value, filtered)=> {
+            //     value === insertNewElement[2] ? (console.log("Data yang dicari telah ditemukan!"), true) : false
+            // });
+        // }
+        // return insertNewElement;
+    }
+}
+let arraysInstanceForLoop = new ArrayLibrary();
+arraysInstanceForLoop.arraysForLoop();
+
+let arraysQueueInstance = new ArrayLibrary();
+arraysQueueInstance.arraysQueueShift();
+
+let arraysQueuePushInstance = new ArrayLibrary();
+arraysQueuePushInstance.arraysQueuePush();
+
+let arraysQueueSearch = new ArrayLibrary();
+arraysQueueSearch.arraysQueueSearch();
+
+let arraysFilter = new ArrayLibrary();
+arraysFilter.arraysFilter(true);
