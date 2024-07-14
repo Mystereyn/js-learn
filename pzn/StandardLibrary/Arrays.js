@@ -1,3 +1,5 @@
+"use strict";
+
 let arrays = ["Teuku", "Reynaldi", "Putra"];
 
 class ArrayLibrary {
@@ -61,10 +63,17 @@ class ArrayLibrary {
 
             return insertNewElement ? (()=>{
                 insertNewElement = [...arrays];
-                insertNewElement.push("ini elemen baru untuk coba arrays filter method");
+                insertNewElement.push("ini data baru untuk find data method");
 
-                let hasBeenPushed = insertNewElement.filter((value, filtered)=> {
-                    value === insertNewElement[2] ? (console.log("Data yang dicari telah ditemukan!"), true) : false
+                let foundIndex = insertNewElement.find((value, index)=> value === insertNewElement[2]);
+                
+                let searchData = insertNewElement.find((value)=> value === "Putra");
+
+                let hasBeenPushed = insertNewElement.filter((value)=> {
+                    value === foundIndex ? (console.log(`Data yang dicari telah ditemukan, yaitu pada data index 
+                    ${insertNewElement.indexOf(foundIndex)}, datanya : ${searchData}`), true) : false;
+
+                    // value === searchData ? console.log(`datanya : ${searchData}`, true) : false;
                 });
                 return hasBeenPushed;
             })() : [];
