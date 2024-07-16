@@ -40,15 +40,20 @@ function objSealed() {
     // Expected output: 33
 }
 
-function objectAssign(){
+function objAssign(){
     const object = {
         name : "Teuku Reynaldi object assign",
         age : 100,
         hobbies : ["Basket", "Playing online game", "reading shitpost"],
         isAlive : true
     }
-    const assignObject = Object.assign(object);
-    return console.log(assignObject);
+    const newObject = {
+        isMechanicalKeyboard : true,
+        codingJavascript : true,
+        onCollage : true,
+    }
+    const assignObject = Object.assign([object, newObject]);
+    console.log(assignObject);
 }
 
-(()=>{objFeeze();objSealed();objectAssign();})();
+(()=>{objFeeze();objSealed();objAssign();})();
