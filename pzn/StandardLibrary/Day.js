@@ -12,4 +12,15 @@ function intervalClock(){
         console.log(logDate);
     }, 1000)
 }
-intervalClock();
+
+function parsingDate(){
+    const timeNow = date.parse(`2020-10-10T08:45:45.123+07:00`);
+    console.log(timeNow);
+
+    const theDate = date(timeNow)
+    console.log(theDate);
+
+}
+
+(()=>{intervalClock(); parsingDate();})();
+
