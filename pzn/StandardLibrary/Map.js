@@ -1,6 +1,6 @@
 const map = new Map();
 
-function createMap(){
+function logicMap(){
 
     // membuat property dan value
     map.set("teuku", "umur 23");
@@ -11,5 +11,7 @@ function createMap(){
 
     // mengecek apakah property ini telah dibuat?
     console.log(map.has("teuku"))
-    
-};createMap();
+
+};
+
+logicMap();
