@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const createTagPargph = document.createElement('p');
+            createTagPargph.innerText = "Teuku";
+            document.body.appendChild(createTagPargph);
+        });
+
+        function hitButton(){
+            document.addEventListener('DOMContentLoaded', function(){
+                const btn = document.createElement('button');
+                const btnText = document.createTextNode('Click!');
+                
+                btn.appendChild(btnText); 
+                document.body.appendChild(btn); 
+                btn.addEventListener('click', function(){
+                    const text = 'Hello';
+                    if(text){
+                       alert(text) 
+                    }
+                });
+            });
+        }
+        hitButton();
+    </script>
+</head>
+<body>
+</body>
+</html>
